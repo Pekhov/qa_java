@@ -12,9 +12,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FelineTest {
 
     @Test
-    public void shouldBeGetFamily() {
+    public void getFamilyCorrectReturnTest() {
         Feline feline = new Feline();
         assertEquals("Кошачьи", feline.getFamily());
+    }
+
+    @Test
+    public void shouldBeReturnOneKittens() {
+        Feline feline = new Feline();
+        int expectedKittens = 1;
+        assertEquals(expectedKittens, feline.getKittens());
     }
 
 }

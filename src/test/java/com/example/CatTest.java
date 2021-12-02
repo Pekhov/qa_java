@@ -24,7 +24,7 @@ public class CatTest {
     }
 
     @Test
-    public void shouldGetSound() {
+    public void getSoundCorrectReturnTest() {
         String expectedSound = "Мяу";
         assertEquals(expectedSound, cat.getSound());
     }
